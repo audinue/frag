@@ -1,0 +1,26 @@
+<script src="frag.js"></script>
+
+<template id="page-a">
+  <div>
+    <h1>Page A</h1>
+    <button frag-push="#page-b" frag-target="#push-container">Push Page B</button>
+  </div>
+</template>
+
+<template id="page-b">
+  <div>
+    <h1>Page B</h1>
+    <button frag-push="#page-c" frag-target="#push-container">Push Page C</button>
+    <br>
+    <button frag-pop="#push-container">Pop</button>
+  </div>
+</template>
+
+<template id="page-c">
+  <div>
+    <h1>Page C</h1>
+    <button frag-pop="#push-container">Pop</button>
+  </div>
+</template>
+
+<div id="push-container" frag-content="#page-a"></div>
