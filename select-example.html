@@ -1,0 +1,25 @@
+<script src="frag.js"></script>
+
+<template id="page-1">
+  <div>
+    <h1>Page 1</h1>
+  </div>
+</template>
+
+<template id="page-2">
+  <div>
+    <h1>Page 2</h1>
+  </div>
+</template>
+
+<template id="page-3">
+  <div>
+    <h1>Page 3</h1>
+  </div>
+</template>
+
+<button frag-select="#page-1" frag-target="#select-container">Page 1</button>
+<button frag-select="#page-2" frag-target="#select-container">Page 2</button>
+<button frag-select="#page-3" frag-target="#select-container">Page 3</button>
+
+<div id="select-container" frag-content="#page-1"></div>
